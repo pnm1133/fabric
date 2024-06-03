@@ -34,7 +34,7 @@ async function ensureFabricFoldersExist() {
       .catch(() => fs.mkdir(patternsPath, { recursive: true }));
     // Optionally download and update patterns after ensuring the directories exist
   } catch (error) {
-    console.error("Error ensuring fabric folders exist:", error);
+    console.error("Error ensuring fabric folders exist:", error)
     throw error; // Make sure to re-throw the error to handle it further up the call stack if necessary
   }
 }
